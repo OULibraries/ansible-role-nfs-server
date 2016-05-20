@@ -1,0 +1,2 @@
+ACTION=="add", SUBSYSTEM=="scsi" , SYSFS{type}=="0|7|14", \
+RUN+="/bin/sh -c 'echo {{ iscsi_timeout }} > /sys$DEVPATH/device/timeout'"

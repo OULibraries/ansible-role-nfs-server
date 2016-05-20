@@ -25,7 +25,7 @@ nfs_shares:
         perms: ['rw','sync','no_root_squash','all_squash']
 
 ```
-and so forth.
+and so forth. See defaults/mail.yml for any other vars.
 
 Dependencies
 ------------

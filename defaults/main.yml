@@ -1,2 +1,4 @@
 ---
 # defaults file for nfs-server
+# timeout in seconds for iscsi volumes
+iscsi_timeout: 600
