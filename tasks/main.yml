@@ -1,6 +1,5 @@
 ---
 # tasks file for nfs-server
-tasks:
-  - include: yum.yml
-  - include: services.yml
-  - include: configure.yml
+- include: yum.yml
+- include: services.yml
+- include: configure.yml
