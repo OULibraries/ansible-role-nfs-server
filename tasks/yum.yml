@@ -1,0 +1,5 @@
+---
+- name: Packages for NFS
+  yum: name={{ item }} state=present
+  with_items:
+  - nfs-utils

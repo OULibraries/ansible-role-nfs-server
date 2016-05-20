@@ -1,0 +1,11 @@
+---
+- name: Run NFS services on boot
+  service:
+    name: "{{ item }}"
+    state: started
+    enabled: yes
+  with_items:
+  - rpcbind
+  - nfs-server
+  - nfs-lock
+  - nfs-idmap
