@@ -1,11 +1,4 @@
 ---
-- name: Set iSCSI timout
-  template:
-    src: 50-udev.rules.j2
-    dest: /etc/udev/rules.d/50-udev.rules
-    owner: root
-    group: root
-    mode: 0644
 - name: Share directories exist
   file:
     path: "{{ item.path }}"
